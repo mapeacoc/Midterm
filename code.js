@@ -26,7 +26,7 @@ function listFunction(hero) {
 const removeHero = () => {
     let range = heros.length - 1
     let deleteHero = prompt("What Hero do you want to remove from your roster? (0 - "+range+")")
-    heros.splice(deleteHero, deleteHero)
+    heros.splice(deleteHero, 1)
 
 let herolist = ""
 heros.forEach(listFunction)
@@ -49,7 +49,7 @@ const replaceHero = () => {
     let range = heros.length - 1
     let addHero = prompt("What hero do you want to add?");
     let replaceHero = prompt("What Hero do you want to remove from your roster? (0 - "+range+")")
-    heros.splice(replaceHero, addHero)
+    heros.splice(replaceHero, 1, addHero)
 
 let herolist = ""
 heros.forEach(listFunction)
